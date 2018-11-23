@@ -1,0 +1,12 @@
+button{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    margin-top: 25px;
+    
+}
+#collapseExample {
+    transition: all .25s ease-in-out;
+  }

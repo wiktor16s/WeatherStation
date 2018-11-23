@@ -1,0 +1,35 @@
+<div class="card" style="width: auto;">
+  <div>
+    <button type="button" class="btn bg-info btn-outline-secondary text-white" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      <i class="icon-hand-pointer-o"></i> Warsaw
+    </button>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h5 class="card-title"> <i class="icon-temperatire"></i> Temperature: {{this.Weather.main.temp}}&#176;C</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 text-center text-muted">
+        <p> <i class="icon-angle-double-down"> </i>min: {{this.Weather.main.temp_min}}&#176;C</p>
+      </div>
+
+      <div class="col-sm-6 text-center text-muted">
+          <p> <i class="icon-angle-double-up"> </i>max: {{this.Weather.main.temp_max}}&#176;C</p>
+        </div>
+
+    </div>
+  </div>
+  <ul id="collapseExample" [ngbCollapse]="!isCollapsed" class="list-group list-group-flush">
+    <li class="list-group-item bg-light"> <i class="icon-sun"></i> Weather: {{this.Weather.weather[0].main}}</li>
+    <li class="list-group-item"> <i class="icon-droplet"></i> Humidity: {{this.Weather.main.humidity}} %</li>
+    <li class="list-group-item bg-light"> <i class="icon-gauge"></i> Pressure: {{this.Weather.main.pressure}} hPa</li>
+    <li class="list-group-item"> <i class="icon-wind"></i> Wind: {{this.Weather.wind.speed}} m/s</li>
+  </ul>
+  <div id="collapseExample" [ngbCollapse]="!isCollapsed" class="card-body bg-light">
+    <a href="https://openweathermap.org/city/756135" class="card-link">Check More <i class="icon-link"></i></a>
+  </div>
+</div>

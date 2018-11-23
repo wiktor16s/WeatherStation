@@ -1,0 +1,104 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 myNavClass border-bottom shadow-sm ">
+    <div class="my-0 mr-md-auto font-weight-normal">
+      <h3 class="font-weight-normal my-0 mr-md-0">Weather Station</h3>
+      <hr class="hrClass" />
+      <p class="text-muted my-0 mr-md-0 authorClass"><i>by Wiktor Sacewicz</i></p>
+    </div>
+  
+    <nav class="my-2 my-md-0 mr-md-3">
+       
+    </nav>
+    <div class="dropdownClass btn-lg">
+    <ws-dropdown></ws-dropdown>
+  </div>
+
+  </div>
+  <div class="pricing-header mx-auto text-center">
+    <h1 class="display-3">Weather <i class="icon-sun"></i> </h1>
+  <hr style="width:50%" />
+    <p class="lead">
+        Wherever you go, no matter what the weather, always bring your own sunshine.
+      <p>
+  </div>
+  
+  <div class="container">
+    <div class="row" *ngIf="this.child.count==9">
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-wroclaw></ws-tile-wroclaw>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-cracow></ws-tile-cracow>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-warsaw></ws-tile-warsaw>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-gdansk></ws-tile-gdansk>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-poznan> </ws-tile-poznan>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-katowice></ws-tile-katowice>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-kielce></ws-tile-kielce>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-szczecin></ws-tile-szczecin>
+      </div>
+  
+      <div class="col-sm-6 col-md-4">
+        <ws-tile-torun></ws-tile-torun>
+      </div>
+    </div>
+  
+    <div class="row" *ngIf="this.child.count==4">
+  
+      <div class="col-sm-6 col-md-6">
+        <ws-tile-wroclaw></ws-tile-wroclaw>
+      </div>
+  
+      <div class="col-sm-6 col-md-6">
+        <ws-tile-cracow></ws-tile-cracow>
+      </div>
+  
+      <div class="col-sm-6 col-md-6">
+        <ws-tile-warsaw></ws-tile-warsaw>
+      </div>
+  
+      <div class="col-sm-6 col-md-6">
+        <ws-tile-gdansk></ws-tile-gdansk>
+      </div>
+  
+    </div>
+  
+    <div class="row" *ngIf="this.child.count==1">
+  
+      <div class="col-sm-12">
+        <ws-tile-wroclaw></ws-tile-wroclaw>
+      </div>
+  
+    </div>
+  
+    <ng-template #onError>
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Please choose corrent value</h1>
+        </div>
+  
+      </div>
+    </ng-template>
+  
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+  
+    </footer>
+  </div>
+  

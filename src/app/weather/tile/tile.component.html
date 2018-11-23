@@ -1,0 +1,35 @@
+<div class="card" style="width: auto;">
+  <div>
+    <button type="button" class="btn bg-info btn-outline-secondary text-white" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      Wroclav
+    </button>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h5 class="card-title">Temperature: {{this.Weather.main.temp}}&#176;C</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 text-center text-muted">
+        <p>min: {{this.Weather.main.temp_min}}&#176;C</p>
+      </div>
+
+      <div class="col-sm-6 text-center text-muted">
+          <p>max: {{this.Weather.main.temp_max}}&#176;C</p>
+        </div>
+
+    </div>
+  </div>
+  <ul id="collapseExample" [ngbCollapse]="!isCollapsed" class="list-group list-group-flush">
+    <li class="list-group-item bg-light">Weather: {{this.Weather.weather[0].main}}</li>
+    <li class="list-group-item">Humidity: {{this.Weather.main.humidity}} %</li>
+    <li class="list-group-item bg-light">Pressure: {{this.Weather.main.pressure}} hPa</li>
+    <li class="list-group-item">Wind: {{this.Weather.wind.speed}} m/s</li>
+  </ul>
+  <div id="collapseExample" [ngbCollapse]="!isCollapsed" class="card-body bg-light">
+    <a href="https://openweathermap.org/city/3081368" class="card-link">Check More</a>
+  </div>
+</div>

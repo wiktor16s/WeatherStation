@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block btn-group dropdown " >
+      <button class="btn myBtn btn-outline-primary " id="dropdownConfig" ngbDropdownToggle>Settings <i class="icon-cog-outline"> </i></button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1 ">
+        <button (click)="update(1)" class="dropdown-item text-center"> <strong>1 Element</strong></button>
+        <hr class="hrClass" />
+        <button (click)="update(4)" class="dropdown-item text-center"><strong>4 Elements</strong></button>
+        <hr class="hrClass" />
+        <button (click)="update(9)" class="dropdown-item text-center"><strong>9 Elements</strong></button>
+      </div>
+    </div>
+  </div>
+
+</div>

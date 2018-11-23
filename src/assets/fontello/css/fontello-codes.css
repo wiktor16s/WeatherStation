@@ -1,0 +1,11 @@
+
+.icon-sun:before { content: '\e800'; } /* '' */
+.icon-wind:before { content: '\e801'; } /* '' */
+.icon-droplet:before { content: '\e802'; } /* '' */
+.icon-gauge:before { content: '\e803'; } /* '' */
+.icon-temperatire:before { content: '\e804'; } /* '' */
+.icon-link:before { content: '\e805'; } /* '' */
+.icon-cog-outline:before { content: '\e806'; } /* '' */
+.icon-angle-double-up:before { content: '\f102'; } /* '' */
+.icon-angle-double-down:before { content: '\f103'; } /* '' */
+.icon-hand-pointer-o:before { content: '\f25a'; } /* '' */
